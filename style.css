@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700&display=swap');
+/* General Styling*/
+:root{
+    --primary-color: rgb(219,4,4);
+    --grey:#cac7c7;
+    --overlay:#0000009c;
+    font-size: 62.5%;
+}
+*{
+    margin:0;
+    padding:0;    
+    box-sizing: border-box;
+    line-height: 1.5;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+img{
+    max-width: 100%;
+    display: block;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/*Header Styling*/
+header{
+  background: var(--primary-color);
+  color:#fff;  
+  text-align: center;
+  width:100%;
+  font-size: 1.5rem;
+  font-weight:400;
+  position:fixed;
+  z-index: 1000;
+}
+
+#logo{
+    display: none;
+}
+nav li a{
+    color:#fff;
+    padding:0.06em;
+    display: block;
+}
+nav li a:hover{
+    background: white;
+    color:var(--primary-color);
+    transition: 0.5s;
+}
+.center{
+    width:90%;
+    text-align: center;
+    padding:5rem 0 5rem 0;
+    margin:auto;
+}
+.bg-primary{
+    background: var(--primary-color);
+    color: white;
+}
+
+/*Home Styling*/
+.bg-home{
+    background: url("Images/Info-2.jpg"); 
+    height:800px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    background-blend-mode: multiply; 
+    background-color: var(--overlay);    
+}
+.home hr{
+    background: var(--primary-color);
+    height:3px;    
+    margin-top: 1.2em;
+    border:none ;
+}
+.home p{
+    font-size: 2rem;
+    margin-top: 1em;
+    font-weight: 300;
+}
+
+/*Buttons*/
+.btn{   
+    color:white;
+    padding:0.8rem;
+    border-radius: 6px;
+    font-weight: 500;
+    font-family: inherit;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.btn:active{
+    transform: translateY(2px);
+}
+
+.btn-download,.btn-subscribe,.btn-order,.btn-buynow{
+    background: var(--primary-color);    
+    width:10em;    
+    margin-top: 2em;
+    font-size: 2.2rem;
+    font-weight: bold;
+    padding:0.4em 1.3em;
+    border: 1px solid rgba(59,58,58,0.219);
+    text-shadow: 0px 1px 2px black;
+    box-shadow: -3px 2px 1px 1px var(--primary-color);
+
+}
+.btn-download:hover,.btn-subscribe:hover,.btn-order:hover,.btn-buynow:hover{
+    position:relative;
+    top: 1px;
+}
+.btn-order{
+    margin-bottom: 1em;;
+}
+.btn-submit{
+    background: white;
+    color: var(--primary-color);
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 300;
+    width: 100%;    
+    border:1px solid;
+    text-transform: uppercase;
+}
+.btn-submit:hover{
+    color:white;
+    background: var(--primary-color);    
+}
+
+
+/*heading styling*/
+h1{
+    font-size: 4.5rem;
+    line-height: 1.2;
+    font-weight: 700;
+}
+h2,h3,h4,h5{
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: 600;
+    padding:0.2em;
+    margin-bottom: 1em;
+}
+h6{
+    font-size: 2.5rem;
+    margin:0.5em;
+    font-weight: 400;
+}
+h3{    
+    font-size: 2.5rem; 
+}
+/* Features Styling*/
+.features{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-weight: 100; 
+    
+}
+.feature-card{
+    border:1px solid white;
+    width:29rem;
+    padding:1.5em;
+    font-size:1.5rem;  
+    margin:3rem;
+
+}
+.feature-card i{
+    font-size: 100px;
+}
+
+/* Information styling */
+.fa-circle-check{
+    color: var(--primary-color);
+    font-size: 1.5em;
+}
+.information-one li,.information-two li{
+    margin:0.3em;
+    font-size:1.5em;
+    font-weight:300;
+}
+#information-two{
+    background: var(--grey);
+}
+/* About Styling*/
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;    
+}
+.card{
+    width:23em;
+    height:27em;
+    box-shadow: 2px 5px 7px 1px;
+    margin:3em;
+    color:black;
+    background:white;
+    border-radius: 5px;;
+    position:relative;
+    font-size: 1.3rem;
+}
+.card:hover{
+    transform: translateY(-3px);
+}
+.avatar{
+    width:10em;
+    height:10em;
+    border-radius: 50%;
+    border:2px solid var(--primary-color);
+
+}
+.image-container{
+    position:absolute;
+    top:17%;
+    left:27%;
+}
+.upper-section{
+    height:35%;
+    background: black;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+.lower-section{
+    height:65%;
+    padding:0.095em;    
+}
+.card-info{
+    margin-top:25%;
+}
+.card-name{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-family: oswald,sans-serif;
+}
+.card-title{
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.card-line{
+    background: var(--primary-color);
+    width: 80%;
+    margin:1em auto;
+    height:2px;
+    border: none;
+}
+.card-description{
+    font-family:montserrat,sans-serif;
+}
+.social-icons{
+    font-size: 2.7rem;
+    margin-top: 0.5em;
+    cursor: pointer;
+}
+.fa-instagram{
+    color: #ef1e43;
+}
+.fa-twitter{
+    color: #1c99e7;
+}
+.fa-facebook{
+    color: #3f62a9;
+}
+
+/* Purchase Styling */
+.bg-purchase{
+    background: url("Images/Purchase-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    color:#fff;
+    background-blend-mode: multiply;
+    background-color: var(--overlay);
+}
+.purchase p{
+    font-size: 3.5rem;
+    font-weight: 900;    
+}
+
+/* Contact Styling */
+.contact label{
+    font-size: 1.4em;
+}
+
+input[type="text"],input[type="email"],textarea{      
+    font-size: 1.5rem;
+    background: transparent;    
+    width: 100%;   
+    border: 2px solid;
+    border-radius: 5px 5px;
+    outline: none;
+    color: white;
+    margin-bottom: 1em;
+    font-family: inherit;
+}
+input[type="text"]:focus,input[type="email"]:focus,textarea:focus{
+    outline: 2px solid;
+}
+input{
+    height:35px;
+}
+
+
+
+/* Footer Styling */
+footer{
+    background-color: #ff0000;
+    font-size: 1.5em;
+    color: #fff;
+    text-transform: uppercase;    
+}
+
+/* media Queries */
+@media (min-width:480px) {
+    #logo{
+        display: unset;
+        height: 70px;
+        width: 80px;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: white;
+        
+    }
+    nav ul{
+        display: flex;
+    }
+    nav li a{
+        color: black;
+        margin-right: 0.5em;
+        font-weight: 600;
+    }
+
+    
+}
+@media (min-width:720px) {
+    h1{
+        font-size: 5rem;
+    }
+    h2,h3,h4,h5{
+        font-size: 3.5rem;
+    }
+    .home,.information-one,.information-two,form{
+        width: 80%;
+        margin:auto;
+    }
+    .btn{
+        width:25rem;
+    }
+}
+@media (min-width:900px) {
+    header{
+        font-size: 1.8rem;
+    }
+nav li a{
+    margin-right: 1.5em;
+   }    
+.information-one,.information-two{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.grid-item-one,.grid-item-two{
+    margin:auto;
+}
+h3{
+    font-size: 2rem;
+}
+.purchase{
+    padding:10rem;
+
+}
+form{
+    width: 60rem;
+}
+.contact label{
+    font-size: 1.5rem;
+}
+footer{
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+
+}
+@media (min-width:1281px) {
+    .center{
+        max-width: 1281px;
+        margin: auto;
+    }
+    header{
+        font-size: 2.5rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
